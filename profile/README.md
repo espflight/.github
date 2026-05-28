@@ -8,7 +8,7 @@
 🍿 Fun facts - what does your team eat for breakfast?
 🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 -->
-<img width="1200" height="300" alt="ESPFlight_Banner" src="https://github.com/user-attachments/assets/8be6afb6-01f6-410c-b839-fbd179ead999" />
+<img width="1200" height="300" alt="ESPFlight_Banner" src="https://github.com/user-attachments/assets/b1f6d7cf-0bc7-4c71-9295-187bbf2753f5" />
 
 Open Source Flight Controller Firmware for ESP MCUs
 
