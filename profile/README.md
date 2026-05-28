@@ -12,12 +12,36 @@
 
 Open Source Flight Controller Firmware for ESP MCUs
 
-espflight is a real-time flight controller firmware designed for brushed (coreless) micro drones based on the ESP family of microcontrollers.
+<div align="center">
+  <img src="https://img.shields.io/badge/ESP32-Flight_Controller-blue?style=for-the-badge&logo=espressif&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/stars/ESPFlight/ESPFlight?style=for-the-badge&color=yellow"/>
+  <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge"/>
+</div>
 
-Supported targets include:
+# 🚁 ESPFlight – The Most Open ESP32 Flight Controller
 
-ESP8266
-ESP32 (Coming Soon...)
-The firmware features a modular architecture with a hardware abstraction layer (HAL) to ensure portability across ESP platforms, a deterministic fixed-rate control loop, and optimized PWM output for brushed motor drivers.
+**Fly with Wi‑Fi, Bluetooth, and dual‑core power – no expensive flight boards needed.**
 
-ESPFlight aims to provide a clean, extensible, and well-structured foundation for research, development, and educational UAV projects.
+> ⚡ A complete flight controller for quadcopters, robots, and drones, running on ESP32 modules. Lightweight, modular, and ready to hack.
+
+---
+
+## ✨ Key Features
+
+- 🔄 **8 motor outputs** @ 4 kHz update rate  
+- 📡 **Dual radio** – Wi‑Fi for configuration, Bluetooth for joystick  
+- 🧠 **Complementary filter** + angle estimator  
+- 🎮 **Supports CRSF, SBUS, PPM** receivers  
+- 🧩 **Built with Arduino & PlatformIO** – easy to extend  
+- 📊 **Telemetry streaming** to Mission Planner, QGroundControl, or custom dashboard  
+- 💾 **Settings saved in SPIFFS** – fly without re‑flashing  
+
+---
+
+## 🚀 Quick Start (3 commands)
+
+```bash
+git clone https://github.com/ESPFlight/ESPFlight.git
+cd ESPFlight
+pio run --target upload
