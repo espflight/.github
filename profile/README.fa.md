@@ -1,40 +1,59 @@
 <div align="center">
 
-<p>
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.md">English</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.de.md">Deutsch</a>
-  &nbsp;·&nbsp;
-  <strong>فارسی</strong>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.md">
+        <strong>English</strong>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.de.md">
+        <strong>Deutsch</strong>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.fa.md">
+        <strong>🇮🇷 فارسی ✓</strong>
+      </a>
+    </td>
+  </tr>
+</table>
 
 <h1>ESPFlight</h1>
 
-<h3>اکوسیستم متن‌باز کنترل پرواز برای کوادکوپترهای سبک DIY مبتنی بر ESP</h3>
+<h3 dir="rtl">
+اکوسیستم متن‌باز کنترل پرواز برای کوادکوپترهای سبک و دست‌ساز مبتنی بر
+<span dir="ltr">ESP</span>
+</h3>
 
-<p><strong>بساز. یاد بگیر. پرواز کن. بهترش کن.</strong></p>
+<p dir="rtl">
+<strong>بساز. یاد بگیر. پرواز کن. بهترش کن.</strong>
+</p>
 
 <br>
 
 <a href="https://espflight.com">
-  <img alt="وب‌سایت ESPFlight" src="https://img.shields.io/badge/Website-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
+  <img alt="ESPFlight Website" src="https://img.shields.io/badge/Website-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
 </a>
 <a href="https://github.com/espflight?tab=repositories">
-  <img alt="مخزن‌های ESPFlight" src="https://img.shields.io/badge/Repositories-Explore-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img alt="ESPFlight Repositories" src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
 <a href="mailto:info@espflight.com">
-  <img alt="ارتباط با ESPFlight" src="https://img.shields.io/badge/Contact-Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white">
+  <img alt="ESPFlight Email" src="https://img.shields.io/badge/Contact-Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
 <br><br>
 
-<img alt="وضعیت پروژه" src="https://img.shields.io/badge/Status-Preparing_for_Public_Release-F59E0B?style=flat-square">
-<img alt="سخت‌افزار مرجع" src="https://img.shields.io/badge/Reference_Target-ESP8266-00979D?style=flat-square&logo=espressif&logoColor=white">
-<img alt="پلتفرم موبایل" src="https://img.shields.io/badge/Mobile_App-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
+<img alt="Project Status" src="https://img.shields.io/badge/Status-Preparing_for_Public_Release-F59E0B?style=flat-square">
+<img alt="Reference Target" src="https://img.shields.io/badge/Reference_Target-ESP8266-00979D?style=flat-square&logo=espressif&logoColor=white">
+<img alt="Mobile Platform" src="https://img.shields.io/badge/Mobile_App-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
 
 <br><br>
 
-<p><strong>فریمور · کنترلر اندروید · مستندات · ساخت مرجع</strong></p>
+<p dir="rtl">
+<strong>فریمور · کنترلر اندروید · مستندات · ساخت مرجع</strong>
+</p>
 
 </div>
 
