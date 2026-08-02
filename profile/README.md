@@ -42,51 +42,19 @@ Open-source flight-control ecosystem for lightweight ESP-based DIY quadcopters
   <img alt="ESPFlight Email" src="https://img.shields.io/badge/Contact-Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
-<br><br>
+<br>
 
 <img alt="Project Status" src="https://img.shields.io/badge/Status-Preparing_for_Public_Release-F59E0B?style=flat-square">
 <img alt="Reference Target" src="https://img.shields.io/badge/Reference_Target-ESP8266-00979D?style=flat-square&logo=espressif&logoColor=white">
 <img alt="Mobile Platform" src="https://img.shields.io/badge/Mobile_App-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
 
-<br><br>
+<br>
 
 <p>
 <strong>Firmware · Android Controller · Documentation · Reference Build</strong>
 </p>
 
 </div>
-
-# ESPFlight
-
-### Open-source flight-control ecosystem for lightweight ESP-based DIY quadcopters
-
-**Build. Learn. Fly. Improve.**
-
-<br>
-
-<a href="https://espflight.com">
-  <img alt="ESPFlight Website" src="https://img.shields.io/badge/Website-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
-</a>
-<a href="https://github.com/espflight?tab=repositories">
-  <img alt="ESPFlight Repositories" src="https://img.shields.io/badge/Repositories-Explore-181717?style=for-the-badge&logo=github&logoColor=white">
-</a>
-<a href="mailto:info@espflight.com">
-  <img alt="Contact ESPFlight" src="https://img.shields.io/badge/Contact-Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white">
-</a>
-
-<br><br>
-
-<img alt="Project Status" src="https://img.shields.io/badge/Status-Preparing_for_Public_Release-F59E0B?style=flat-square">
-<img alt="Reference Target" src="https://img.shields.io/badge/Reference_Target-ESP8266-00979D?style=flat-square&logo=espressif&logoColor=white">
-<img alt="Mobile Platform" src="https://img.shields.io/badge/Mobile_App-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
-
-<br><br>
-
-**Firmware · Android Controller · Documentation · Reference Build**
-
-</div>
-
----
 
 ## About ESPFlight
 
