@@ -1,16 +1,34 @@
 <div align="center">
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.md">
+        <strong>English</strong>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.de.md">
+        <strong>🇩🇪 Deutsch ✓</strong>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.fa.md">
+        <strong>فارسی</strong>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<h1>ESPFlight</h1>
+
+<h3>
+Open-Source-Flugsteuerungsökosystem für leichte ESP-basierte DIY-Quadrocopter
+</h3>
+
 <p>
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.md">English</a> ·
-  <strong>Deutsch</strong> ·
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.fa.md">فارسی</a>
+<strong>Bauen. Lernen. Fliegen. Verbessern.</strong>
 </p>
-
-# ESPFlight
-
-### Open-Source-Flugsteuerungsökosystem für leichte ESP-basierte DIY-Quadrocopter
-
-**Bauen. Lernen. Fliegen. Verbessern.**
 
 <br>
 
@@ -18,7 +36,7 @@
   <img alt="ESPFlight-Website" src="https://img.shields.io/badge/Website-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
 </a>
 <a href="https://github.com/espflight?tab=repositories">
-  <img alt="ESPFlight-Repositories" src="https://img.shields.io/badge/Repositories-Ansehen-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img alt="ESPFlight-Repositories" src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white">
 </a>
 <a href="mailto:info@espflight.com">
   <img alt="ESPFlight kontaktieren" src="https://img.shields.io/badge/Kontakt-E--Mail-0F766E?style=for-the-badge&logo=gmail&logoColor=white">
@@ -32,11 +50,11 @@
 
 <br><br>
 
-**Firmware · Android-Steuerung · Dokumentation · Referenzaufbau**
+<p>
+<strong>Firmware · Android-Steuerung · Dokumentation · Referenzaufbau</strong>
+</p>
 
 </div>
-
----
 
 ## Über ESPFlight
 
