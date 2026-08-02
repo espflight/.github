@@ -1,10 +1,24 @@
 <div align="center">
 
 <p>
-  <strong>English</strong> ·
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.de.md">Deutsch</a> ·
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.fa.md">فارسی</a>
+  <a href="https://github.com/espflight/.github/blob/main/profile/README.md">
+    <img alt="English" src="https://img.shields.io/badge/English-Selected-0284C7?style=for-the-badge">
+  </a>
+  <a href="https://github.com/espflight/.github/blob/main/profile/README.de.md">
+    <img alt="Deutsch" src="https://img.shields.io/badge/Deutsch-Lesen-181717?style=for-the-badge">
+  </a>
+  <a href="https://github.com/espflight/.github/blob/main/profile/README.fa.md">
+    <img alt="فارسی" src="https://img.shields.io/badge/فارسی-مطالعه-181717?style=for-the-badge">
+  </a>
 </p>
+
+<h1>ESPFlight</h1>
+
+<h3>Open-source flight-control ecosystem for lightweight ESP-based DIY quadcopters</h3>
+
+<p><strong>Build. Learn. Fly. Improve.</strong></p>
+
+</div>
 
 # ESPFlight
 
