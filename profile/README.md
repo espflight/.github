@@ -2,34 +2,31 @@
 
 # ESPFlight
 
-### Open-source flight control ecosystem for ESP-based DIY quadcopters
+### Open-source flight-control ecosystem for lightweight ESP-based DIY quadcopters
 
-<p>
-  Build affordable aircraft, understand flight control, and develop with open-source tools.
-</p>
-
-<p>
-  <a href="https://espflight.com">
-    <img alt="Website" src="https://img.shields.io/badge/Website-espflight.com-0EA5E9?style=for-the-badge&logo=googlechrome&logoColor=white">
-  </a>
-  <a href="https://github.com/espflight">
-    <img alt="GitHub Organization" src="https://img.shields.io/badge/GitHub-Organization-181717?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-  <a href="mailto:info@espflight.com">
-    <img alt="Email" src="https://img.shields.io/badge/Contact-info%40espflight.com-14B8A6?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
-</p>
-
-<p>
-  <img alt="Project Status" src="https://img.shields.io/badge/Status-Active_Development-F59E0B?style=flat-square">
-  <img alt="Platform" src="https://img.shields.io/badge/Platform-ESP8266-00979D?style=flat-square&logo=espressif&logoColor=white">
-  <img alt="Mobile App" src="https://img.shields.io/badge/Mobile-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
-  <img alt="Project Type" src="https://img.shields.io/badge/Project-Open_Source-22C55E?style=flat-square&logo=opensourceinitiative&logoColor=white">
-</p>
+Build. Learn. Fly. Improve.
 
 <br>
 
-**Firmware · Mobile Controller · Documentation · Reference Hardware**
+<a href="https://espflight.com">
+  <img alt="ESPFlight Website" src="https://img.shields.io/badge/Website-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
+</a>
+<a href="https://github.com/espflight?tab=repositories">
+  <img alt="ESPFlight Repositories" src="https://img.shields.io/badge/Repositories-Explore-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
+<a href="mailto:info@espflight.com">
+  <img alt="Contact ESPFlight" src="https://img.shields.io/badge/Contact-Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white">
+</a>
+
+<br><br>
+
+<img alt="Project Status" src="https://img.shields.io/badge/Status-Preparing_for_Public_Release-F59E0B?style=flat-square">
+<img alt="Current Reference Target" src="https://img.shields.io/badge/Reference_Target-ESP8266-00979D?style=flat-square&logo=espressif&logoColor=white">
+<img alt="Mobile Platform" src="https://img.shields.io/badge/Mobile_App-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
+
+<br><br>
+
+**Firmware · Android Controller · Documentation · Reference Build**
 
 </div>
 
@@ -37,260 +34,163 @@
 
 ## About ESPFlight
 
-**ESPFlight** is an open-source ecosystem for building, controlling, testing, and learning about lightweight DIY quadcopters based on ESP microcontrollers.
+**ESPFlight** is an open-source ecosystem for building, controlling, testing, and understanding lightweight DIY quadcopters based on ESP microcontrollers.
 
-The project aims to make flight-control development more accessible to makers, students, embedded developers, educators, and drone enthusiasts through:
+The project combines flight-controller firmware, a dedicated Android application, practical documentation, and a tested reference build to provide an accessible path into DIY flight-control development.
 
-* Understandable source code
-* Affordable and widely available hardware
-* Practical documentation
-* Mobile-based flight control
-* Real-world testing
-* Reproducible reference builds
-
-ESPFlight is not intended to replace large professional autopilot platforms.
-
-Instead, it focuses on providing a simpler and more approachable path for learning, building, experimenting, and developing compact ESP-based aircraft.
+ESPFlight is designed for makers, students, educators, embedded developers, and drone enthusiasts who want to learn how a flight-control system works and experiment with affordable hardware.
 
 ---
 
 ## Ecosystem
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### ESPFlight Firmware
 
-### 🚁 ESPFlight Firmware
+The core flight-controller firmware responsible for processing control inputs and maintaining stable flight.
 
-The core flight-controller firmware for supported ESP-based quadcopters.
+Current development areas include:
 
-**Primary responsibilities:**
-
-* Real-time flight control
 * IMU data processing
 * Attitude estimation
 * PID stabilization
 * Motor mixing and output
-* Receiver input processing
-* Arming and disarming safety
-* Communication-loss protection
-* Battery monitoring
 * Flight-state management
+* Arming and disarming logic
+* Communication-loss failsafe
+* Battery-voltage monitoring
+* Low-voltage response
+* Modular flight-control architecture
 
-</td>
-<td width="50%" valign="top">
+### ESPFlight Lite
 
-### 📱 ESPFlight Lite
+A lightweight Android application designed specifically for supported ESPFlight quadcopters.
 
-A lightweight Android application for controlling and monitoring supported ESPFlight aircraft.
+Its primary responsibilities include:
 
-**Primary goals:**
-
-* Simple setup
-* Responsive touch controls
-* Essential flight information
-* Reliable communication
-* Landscape-optimized interface
-* Clear connection status
-* Accessible configuration
-* No unnecessary advanced features
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 📚 Documentation
-
-Practical guides for building, configuring, testing, and understanding an ESPFlight quadcopter.
-
-**Planned documentation:**
-
-* Getting started
-* Wiring diagrams
-* Firmware installation
-* IMU calibration
+* Touch-based flight controls
+* Wi-Fi communication
+* Connection monitoring
+* Essential flight telemetry
+* Battery and signal information
+* Flight-time display
 * PID configuration
-* Motor testing
-* Failsafe behavior
-* Troubleshooting
-* Flight-control concepts
-* Software architecture
+* Landscape-optimized controls
+* English and Persian interface support
 
-</td>
-<td width="50%" valign="top">
+ESPFlight Lite focuses on the essential control experience and does not include features reserved for more advanced editions.
 
-### 🔧 Reference Hardware
+### Documentation
 
-Tested hardware configurations and reference designs for reproducible ESPFlight builds.
+The ESPFlight documentation will provide practical instructions for:
 
-**Planned resources:**
+* Building the reference quadcopter
+* Wiring electronic components
+* Installing the firmware
+* Configuring the flight controller
+* Calibrating the IMU
+* Testing motors safely
+* Understanding arming and failsafe behavior
+* Tuning PID values
+* Troubleshooting common problems
+* Understanding the source-code architecture
 
-* Component lists
-* Wiring references
-* Supported configurations
-* Frame recommendations
-* Motor and propeller setup
+### Reference Build
+
+ESPFlight will document a known working hardware configuration based on the aircraft used during development and flight testing.
+
+The reference build is intended to provide:
+
+* Tested component selection
+* Wiring diagrams
+* Motor and propeller configuration
 * Power-system guidance
 * Assembly instructions
-* Safety checklists
-* Reference flight builds
-
-</td>
-</tr>
-</table>
+* Firmware configuration
+* Pre-flight safety checks
+* Initial flight-testing procedures
 
 ---
 
 ## Project Status
 
 > [!IMPORTANT]
-> ESPFlight is currently under active development and is not yet considered production-ready.
+> ESPFlight is under active development and is currently being prepared for its first public release.
 
-A working firmware version has completed real-world flight tests on the current reference quadcopter.
+A working development version of the firmware has completed real-world flight tests on the current ESP8266-based reference quadcopter.
 
-The project is now being reviewed, simplified, documented, and prepared for its first public release.
+The current work focuses on reviewing the flight-critical code, completing the failsafe system, simplifying the project structure, improving documentation, and preparing ESPFlight Lite for integration with the public firmware release.
 
-### Current focus
+### Current priorities
 
-```text
-Firmware stabilization
-        ↓
-Failsafe and safety review
-        ↓
-Code cleanup and documentation
-        ↓
-ESPFlight Lite integration
-        ↓
-Reference hardware documentation
-        ↓
-First public release
-```
+* [x] Working flight-control firmware
+* [x] Successful real-world flight testing
+* [x] ESPFlight Lite Android controller
+* [ ] Complete communication-loss failsafe review
+* [ ] Complete low-voltage behavior review
+* [ ] Clean and organize the firmware source code
+* [ ] Prepare installation and configuration guides
+* [ ] Document the reference quadcopter
+* [ ] Publish the first public release
 
-### Initial release objectives
-
-* Stable firmware baseline
-* Reliable communication-loss failsafe
-* Battery monitoring and protection
-* ESPFlight Lite Android application
-* Firmware installation instructions
-* Configuration documentation
-* Documented reference quadcopter
-* Developer and hardware examples
-
-Repositories and release packages will be published when they are sufficiently tested and documented.
+No public release date has been announced.
 
 ---
 
 ## Planned Repositories
 
-| Repository           | Description                                |       Status      |
-| :------------------- | :----------------------------------------- | :---------------: |
-| `espflight-firmware` | Core ESPFlight flight-controller firmware  | 🚧 In development |
-| `espflight-lite`     | Lightweight Android controller application | 🚧 In development |
-| `espflight-docs`     | Documentation, tutorials, and build guides |     📝 Planned    |
-| `espflight-hardware` | Reference hardware and wiring designs      |     📝 Planned    |
-| `espflight-examples` | Educational and development examples       |     📝 Planned    |
+| Repository           | Purpose                              |     Status     |
+| :------------------- | :----------------------------------- | :------------: |
+| `espflight-firmware` | Core flight-controller firmware      | In development |
+| `espflight-lite`     | Lightweight Android controller       | In development |
+| `espflight-docs`     | Documentation and build guides       |     Planned    |
+| `espflight-hardware` | Reference build and wiring resources |     Planned    |
+| `espflight-examples` | Educational and development examples |     Planned    |
 
-> Repository names and structure may evolve before the first stable public release.
+Repository names and organization may evolve before publication.
 
 ---
 
 ## Project Principles
 
-<table>
-<tr>
-<td width="33%" valign="top">
+### Tested before stable
 
-### 🧪 Tested Features
+Flight-critical behavior should be tested on real hardware before being described as stable.
 
-Flight-critical features should be tested on real hardware before being presented as stable.
+### Safety as a core requirement
 
-</td>
-<td width="33%" valign="top">
+Arming, motor output, communication loss, battery voltage, and failsafe behavior are fundamental parts of the system.
 
-### 🧩 Modular Design
+### Understandable source code
 
-Firmware, applications, documentation, and hardware should remain organized and maintainable.
+The codebase should remain readable enough to help developers understand how the flight controller works.
 
-</td>
-<td width="33%" valign="top">
+### Modular development
 
-### 📖 Readable Code
+Firmware, applications, documentation, and hardware resources should remain organized as separate but connected projects.
 
-The source code should help developers understand how the flight-control system works.
+### Affordable and accessible hardware
 
-</td>
-</tr>
+ESPFlight should remain suitable for lightweight DIY builds using commonly available components.
 
-<tr>
-<td width="33%" valign="top">
+### Honest project status
 
-### 💡 Accessible Development
-
-The project should remain approachable for students, makers, and embedded developers.
-
-</td>
-<td width="33%" valign="top">
-
-### 💰 Affordable Hardware
-
-ESPFlight should remain suitable for low-cost DIY builds using available components.
-
-</td>
-<td width="33%" valign="top">
-
-### 🛡️ Safety First
-
-Arming, motors, failsafe, battery monitoring, and communication loss are core requirements.
-
-</td>
-</tr>
-</table>
+Experimental, incomplete, tested, and stable features should be identified clearly.
 
 ---
 
-## Who Is ESPFlight For?
+## Intended Audience
 
-ESPFlight is intended for:
+ESPFlight is being developed for:
 
 * DIY drone builders
 * Electronics enthusiasts
-* Embedded developers
 * Students and educators
-* Mobile application developers
-* Makers learning flight-control systems
+* Embedded-system developers
+* Android developers
+* Makers learning flight-control concepts
 * Developers experimenting with ESP microcontrollers
-* Researchers working with lightweight experimental aircraft
 
-Basic experience with electronics, microcontrollers, soldering, and embedded programming is recommended.
-
----
-
-## Technology Direction
-
-ESPFlight is being developed around a modular ecosystem:
-
-```text
-┌──────────────────────────────────────────────────────┐
-│                  ESPFlight Ecosystem                 │
-├───────────────────────┬──────────────────────────────┤
-│                       │                              │
-│  ESPFlight Firmware   │      ESPFlight Lite          │
-│                       │                              │
-│  • Flight control     │      • Touch controls        │
-│  • PID stabilization  │      • Flight information    │
-│  • IMU processing     │      • Configuration         │
-│  • Motor management   │      • Status monitoring     │
-│  • Safety systems     │      • Android interface     │
-│                       │                              │
-├───────────────────────┴──────────────────────────────┤
-│                                                     │
-│       Documentation · Hardware · Examples           │
-│                                                     │
-└─────────────────────────────────────────────────────┘
-```
+Experience with electronics, soldering, microcontrollers, and embedded programming is recommended.
 
 ---
 
@@ -298,69 +198,57 @@ ESPFlight is being developed around a modular ecosystem:
 
 ESPFlight is currently being prepared for public collaboration.
 
-Contribution guidelines, coding standards, issue templates, and development documentation will be published with the relevant repositories.
+Contribution guidelines, coding standards, issue templates, and testing requirements will be published with the relevant repositories.
 
 Future contributions may include:
 
-* Firmware improvements
-* Bug reports
+* Firmware development
 * Android development
+* Bug reports
 * Documentation
 * Translation
 * Hardware testing
 * Safety reviews
 * Example projects
-* Reference builds
 
 > [!NOTE]
-> Flight-critical changes should be tested carefully and clearly marked as experimental until their behavior has been validated on real hardware.
+> Flight-critical modifications should be clearly marked as experimental until their behavior has been validated through controlled testing.
 
 ---
 
 ## Safety Notice
 
 > [!WARNING]
-> ESPFlight is an experimental open-source project. Quadcopters can cause injury, property damage, battery fires, or loss of control if assembled, configured, modified, or operated incorrectly.
+> ESPFlight is experimental software. Quadcopters can cause injury, property damage, battery fires, or loss of control when assembled, configured, modified, or operated incorrectly.
 
-Always:
+Before testing:
 
-* Remove propellers during bench testing
-* Secure the aircraft before motor tests
+* Remove all propellers during bench tests
+* Secure the aircraft before testing motors
 * Verify motor order and rotation direction
 * Use suitable batteries and power components
+* Test arming and failsafe behavior without propellers
 * Keep people and animals away from the test area
-* Test failsafe behavior before the first flight
-* Perform initial flights in a large open area
-* Follow local aviation laws and regulations
-* Treat untested flight-critical changes as experimental
+* Conduct initial flights in a large open area
+* Follow applicable aviation and safety regulations
 
-The project maintainers and contributors are not responsible for damage, injury, or loss resulting from the use of ESPFlight software, documentation, or hardware designs.
+Use ESPFlight entirely at your own risk.
 
 ---
 
-## Follow the Project
-
 <div align="center">
 
-<p>
-  <a href="https://espflight.com">
-    <img alt="Visit ESPFlight Website" src="https://img.shields.io/badge/Visit_Our_Website-0EA5E9?style=for-the-badge&logo=googlechrome&logoColor=white">
-  </a>
-  <a href="https://github.com/espflight">
-    <img alt="Explore ESPFlight on GitHub" src="https://img.shields.io/badge/Explore_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-  <a href="mailto:info@espflight.com">
-    <img alt="Contact ESPFlight" src="https://img.shields.io/badge/Contact_ESPFlight-14B8A6?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
-</p>
-
-<br>
-
-### Build. Learn. Fly. Improve.
+## ESPFlight
 
 **An accessible path into DIY flight-control development.**
 
 <br>
+
+<a href="https://espflight.com">
+  <img alt="Visit ESPFlight" src="https://img.shields.io/badge/Visit-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
+</a>
+
+<br><br>
 
 <sub>ESPFlight is under active development.</sub>
 
