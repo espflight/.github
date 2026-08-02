@@ -1,22 +1,58 @@
 <div align="center">
 
-<p>
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.md">
-    <img alt="English" src="https://img.shields.io/badge/English-Selected-0284C7?style=for-the-badge">
-  </a>
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.de.md">
-    <img alt="Deutsch" src="https://img.shields.io/badge/Deutsch-Lesen-181717?style=for-the-badge">
-  </a>
-  <a href="https://github.com/espflight/.github/blob/main/profile/README.fa.md">
-    <img alt="فارسی" src="https://img.shields.io/badge/فارسی-مطالعه-181717?style=for-the-badge">
-  </a>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.md">
+        <strong>🇬🇧 English ✓</strong>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.de.md">
+        <strong>Deutsch</strong>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/espflight/.github/blob/main/profile/README.fa.md">
+        <strong>فارسی</strong>
+      </a>
+    </td>
+  </tr>
+</table>
 
 <h1>ESPFlight</h1>
 
-<h3>Open-source flight-control ecosystem for lightweight ESP-based DIY quadcopters</h3>
+<h3>
+Open-source flight-control ecosystem for lightweight ESP-based DIY quadcopters
+</h3>
 
-<p><strong>Build. Learn. Fly. Improve.</strong></p>
+<p>
+<strong>Build. Learn. Fly. Improve.</strong>
+</p>
+
+<br>
+
+<a href="https://espflight.com">
+  <img alt="ESPFlight Website" src="https://img.shields.io/badge/Website-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
+</a>
+<a href="https://github.com/espflight?tab=repositories">
+  <img alt="ESPFlight Repositories" src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
+<a href="mailto:info@espflight.com">
+  <img alt="ESPFlight Email" src="https://img.shields.io/badge/Contact-Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white">
+</a>
+
+<br><br>
+
+<img alt="Project Status" src="https://img.shields.io/badge/Status-Preparing_for_Public_Release-F59E0B?style=flat-square">
+<img alt="Reference Target" src="https://img.shields.io/badge/Reference_Target-ESP8266-00979D?style=flat-square&logo=espressif&logoColor=white">
+<img alt="Mobile Platform" src="https://img.shields.io/badge/Mobile_App-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
+
+<br><br>
+
+<p>
+<strong>Firmware · Android Controller · Documentation · Reference Build</strong>
+</p>
 
 </div>
 
