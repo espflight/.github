@@ -1,280 +1,271 @@
-<div align="center">
+# ESPFlight
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/espflight/.github/blob/main/profile/README.md">
-        <strong>🇬🇧 English ✓</strong>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/espflight/.github/blob/main/profile/README.de.md">
-        <strong>Deutsch</strong>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/espflight/.github/blob/main/profile/README.fa.md">
-        <strong>فارسی</strong>
-      </a>
-    </td>
-  </tr>
-</table>
+### Open flight platform for ESP-based drones
 
-<h1>ESPFlight</h1>
+**ESPFlight is not a drone brand. It is the platform behind drone brands.**
 
-<h3>
-Open-source flight-control ecosystem for lightweight ESP-based DIY quadcopters
-</h3>
+**Build it. Brand it. Sell it.**
 
-<p>
-<strong>Build. Learn. Fly. Improve.</strong>
-</p>
+ESPFlight is a flight-control platform and ecosystem designed for makers, developers, small manufacturers, and companies that want to build their own ESP-based drone products without starting every layer from zero.
 
-<br>
+The platform brings together open flight-controller firmware, an open hardware reference, a companion application, a documented communication layer, and practical documentation — while leaving the final product, hardware identity, brand, pricing, and customer relationship in the hands of the maker.
 
-<a href="https://espflight.com">
-  <img alt="ESPFlight Website" src="https://img.shields.io/badge/Website-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
-</a>
-<a href="https://github.com/espflight?tab=repositories">
-  <img alt="ESPFlight Repositories" src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white">
-</a>
-<a href="mailto:info@espflight.com">
-  <img alt="ESPFlight Email" src="https://img.shields.io/badge/Contact-Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white">
-</a>
-
-<br>
-
-<img alt="Project Status" src="https://img.shields.io/badge/Status-Preparing_for_Public_Release-F59E0B?style=flat-square">
-<img alt="Reference Target" src="https://img.shields.io/badge/Reference_Target-ESP8266-00979D?style=flat-square&logo=espressif&logoColor=white">
-<img alt="Mobile Platform" src="https://img.shields.io/badge/Mobile_App-Android-3DDC84?style=flat-square&logo=android&logoColor=white">
-
-<br>
-
-<p>
-<strong>Firmware · Android Controller · Documentation · Reference Build</strong>
-</p>
-
-</div>
-
-## About ESPFlight
-
-**ESPFlight** is an open-source ecosystem for building, controlling, testing, and understanding lightweight DIY quadcopters based on ESP microcontrollers.
-
-The project combines flight-controller firmware, a dedicated Android application, practical documentation, and a tested reference build to provide an accessible path into DIY flight-control development.
-
-ESPFlight is designed for makers, students, educators, embedded developers, and drone enthusiasts who want to understand how a flight-control system works and experiment with affordable hardware.
+> Open platform. Independent products. Shared growth.
 
 ---
 
-## The Ecosystem
+## What ESPFlight provides
 
-### 🚁 ESPFlight Firmware
+| Layer | Role | Model |
+| --- | --- | --- |
+| **ESPFlight Firmware** | Flight control, stabilization, safety state, telemetry, configuration, and device-side communication | **Open source — MPL-2.0** |
+| **ESPFlight Hardware Reference** | A known starting point for compatible flight-controller hardware | **Open hardware — CERN-OHL-W-2.0** |
+| **ESPFlight Application** | The official companion experience for control, telemetry, setup, and tuning | **Free to use — closed source** |
+| **ESPFlight Protocol & Documentation** | The shared contract that helps compatible hardware and software work together | **Documented platform interface** |
 
-The core flight-controller firmware responsible for processing pilot commands and maintaining stable flight.
-
-Current development areas include:
-
-* IMU data processing
-* Attitude estimation
-* PID stabilization
-* Motor mixing and output
-* Receiver input processing
-* Flight-state management
-* Arming and disarming logic
-* Communication-loss failsafe
-* Battery-voltage monitoring
-* Low-voltage response
-* Modular flight-control architecture
-
-### 📱 ESPFlight Lite
-
-A lightweight Android application designed specifically for supported ESPFlight quadcopters.
-
-Its primary functions include:
-
-* Touch-based flight controls
-* Wi-Fi communication
-* Connection monitoring
-* Essential flight telemetry
-* Battery and signal information
-* Flight-time display
-* PID configuration
-* Landscape-optimized controls
-* English and Persian interface support
-
-ESPFlight Lite focuses on the essential tools required to configure, control, and monitor a supported aircraft.
-
-### 📚 Documentation
-
-The ESPFlight documentation will provide practical instructions for:
-
-* Building the reference quadcopter
-* Wiring electronic components
-* Installing the firmware
-* Configuring the flight controller
-* Calibrating the IMU
-* Testing motors safely
-* Understanding arming and failsafe behavior
-* Tuning PID values
-* Troubleshooting common problems
-* Understanding the source-code architecture
-
-### 🔧 Reference Build
-
-ESPFlight will document a known working hardware configuration based on the aircraft used during development and flight testing.
-
-The reference build is intended to provide:
-
-* Tested component selection
-* Wiring diagrams
-* Motor and propeller configuration
-* Power-system guidance
-* Assembly instructions
-* Firmware configuration
-* Pre-flight safety checks
-* Initial flight-testing procedures
+ESPFlight is intended to be a reusable foundation, not a fixed product design.
 
 ---
 
-## Project Status
+## Build your own product
 
-> [!IMPORTANT]
-> ESPFlight is under active development and is currently being prepared for its first public release.
+A maker or company can start from ESPFlight, adapt the hardware to a different size or layout, integrate it into a new drone, manufacture the result, and sell that product under its **own brand**.
 
-A working development version of the firmware has completed real-world flight tests on the current ESP8266-based reference quadcopter.
+For example:
 
-Current work focuses on reviewing flight-critical code, completing the failsafe system, simplifying the project structure, improving documentation, and preparing ESPFlight Lite for the public firmware release.
+```text
+SkyMaker Mini
+Compatible with ESPFlight
+```
 
-### Current progress
+The product remains a **SkyMaker** product. ESPFlight is the technology platform underneath it.
 
-* [x] Working flight-control firmware
-* [x] Successful real-world flight testing
-* [x] ESPFlight Lite Android controller
-* [ ] Complete the communication-loss failsafe review
-* [ ] Complete the low-voltage behavior review
-* [ ] Clean and organize the firmware source code
-* [ ] Prepare installation and configuration guides
-* [ ] Document the reference quadcopter
-* [ ] Publish the first public release
+Subject to the applicable open-source and open-hardware license terms, independent makers may:
 
-No public release date has been announced.
+- use ESPFlight for personal or commercial projects;
+- modify the open firmware and hardware reference;
+- manufacture compatible hardware;
+- create their own product form factor and design;
+- sell products built on the platform;
+- use their own brand, packaging, pricing, and sales channels.
 
----
-
-## Planned Repositories
-
-| Repository           | Purpose                              |     Status     |
-| :------------------- | :----------------------------------- | :------------: |
-| `espflight-firmware` | Core flight-controller firmware      | In development |
-| `espflight-lite`     | Lightweight Android controller       | In development |
-| `espflight-docs`     | Documentation and build guides       |     Planned    |
-| `espflight-hardware` | Reference build and wiring resources |     Planned    |
-| `espflight-examples` | Educational and development examples |     Planned    |
-
-Repository names and organization may evolve before publication.
+A maker does **not** need to become an ESPFlight Partner simply to build or sell an independent product using the open components according to their licenses.
 
 ---
 
-## Project Principles
+## No official ESPFlight kit
 
-### Tested before stable
+ESPFlight itself is **not intended to manufacture or sell an “Official ESPFlight Kit” or an “Official ESPFlight Hardware” product line**.
 
-Flight-critical behavior should be tested on real hardware before being described as stable.
+The goal is for ESPFlight to remain neutral infrastructure for independent hardware brands rather than competing with those brands as a hardware manufacturer.
 
-### Safety as a core requirement
+Even if the founder of ESPFlight produces hardware through a separate brand, that hardware brand remains an **independent manufacturer on the ESPFlight platform**. It does not become “Official ESPFlight Hardware” merely because of common ownership or founder involvement.
 
-Arming, motor output, communication loss, battery voltage, and failsafe behavior are fundamental parts of the system.
+---
 
-### Understandable source code
+## The official application
 
-The codebase should remain readable enough to help developers understand how the flight controller works.
+The **ESPFlight Application** provides a common companion experience across compatible ESPFlight-based drones.
 
-### Modular development
+The application is intended to cover the everyday platform experience, including areas such as:
 
-Firmware, applications, documentation, and hardware resources should remain organized as separate but connected projects.
+- flight control;
+- connection and flight-state feedback;
+- telemetry;
+- configuration;
+- PID tuning;
+- supported assisted-flight functions;
+- future device identity and ecosystem features.
 
-### Affordable and accessible hardware
+The application is **free to use and closed source**, separate from the open firmware and hardware licenses.
 
-ESPFlight should remain suitable for lightweight DIY builds using commonly available components.
+The long-term model is to keep the essential flight experience accessible while allowing optional advanced software features and services to support continued platform development.
+
+ESPFlight aims to make the official application the **best and easiest experience**, not to make openness depend on application lock-in.
+
+---
+
+## Independent products and ESPFlight branding
+
+Open technology and brand rights are intentionally separate.
+
+Independent products can accurately describe their relationship with ESPFlight using wording such as:
+
+- **Compatible with ESPFlight**
+- **Based on ESPFlight**
+- **Built with ESPFlight**
+- **Works with ESPFlight Application**
+
+These descriptions must be truthful and must not imply certification, endorsement, partnership, or official status that has not been granted.
+
+The following are reserved for specifically authorized relationships under the ESPFlight Brand Policy:
+
+- **Powered by ESPFlight**
+- **ESPFlight Partner**
+- official Partner badges or certification-style marks
+- use of the ESPFlight logo in ways that imply official product status or endorsement
+
+Read the full **ESPFlight Trademark & Brand Policy** at:
+
+**https://espflight.com/brand-policy/**
+
+---
+
+## Optional Partner Program
+
+The ESPFlight Partner Program is designed for makers and manufacturers who want a **closer commercial relationship** with the platform.
+
+Partnership is optional. It is a benefit — not permission to use the open platform.
+
+Depending on the published Partner terms, authorized Partners may receive benefits such as:
+
+- closer compatibility guidance;
+- product-level technical communication;
+- ecosystem visibility;
+- Partner recognition;
+- launch or directory opportunities;
+- authorized use of specific ESPFlight Partner branding.
+
+Independent building and selling remain available without Partner status under the applicable licenses.
+
+---
+
+## Licensing
+
+### Firmware
+
+ESPFlight Firmware is licensed under the **Mozilla Public License 2.0 (MPL-2.0)**.
+
+This allows commercial use, modification, and redistribution subject to the terms of the license. MPL-covered files and modifications to those files remain subject to MPL-2.0 when distributed.
+
+Full license and ESPFlight summary:
+
+**https://espflight.com/licenses/firmware/**
+
+### Hardware
+
+The ESPFlight Hardware Reference is licensed under **CERN Open Hardware Licence Version 2 — Weakly Reciprocal (CERN-OHL-W-2.0)**.
+
+This allows makers and companies to study, modify, manufacture, and commercially use the covered hardware design subject to the terms of the license.
+
+Full license and ESPFlight summary:
+
+**https://espflight.com/licenses/hardware/**
+
+### Brand
+
+The firmware and hardware licenses do **not** grant unrestricted rights to the ESPFlight name, logo, Partner marks, or reserved relationship wording.
+
+Brand use is governed separately by the:
+
+**ESPFlight Trademark & Brand Policy**  
+https://espflight.com/brand-policy/
+
+If a summary in this README conflicts with an applicable license, the full license text controls.
+
+---
+
+## Platform philosophy
+
+ESPFlight is built around a simple idea:
+
+> The shared technology should be open enough for other people to build real products on top of it, while each maker remains free to create a distinct product and business of their own.
+
+A healthy ESPFlight ecosystem looks like this:
+
+```text
+ESPFlight platform
+      ↓
+Independent makers and companies
+      ↓
+Different boards, drones, products, and brands
+      ↓
+More compatible devices and users
+      ↓
+A stronger application, community, and ecosystem
+      ↓
+More development flowing back into the platform
+```
+
+Success is not every drone carrying the ESPFlight name.
+
+Success is many independent products being able to say, accurately:
+
+**Compatible with ESPFlight.**
+
+---
+
+## Project principles
+
+### Platform first
+
+Build reusable infrastructure instead of one locked hardware product.
+
+### Open at the foundation
+
+Keep the flight-controller firmware and reference hardware inspectable, adaptable, and commercially usable under their published licenses.
+
+### Independent brands
+
+The name on the product belongs to the maker who designed, manufactured, and sells it.
+
+### Compatibility without lock-in
+
+Provide a coherent official experience while keeping the platform architecture understandable and extensible.
+
+### Safety before claims
+
+Flight-critical behavior should be tested on real hardware before being described as stable or production-ready.
 
 ### Honest project status
 
-Experimental, incomplete, tested, and stable features should always be identified clearly.
+Experimental, incomplete, tested, and stable functionality should be identified clearly as the platform evolves.
 
 ---
 
-## Intended Audience
+## Project status
 
-ESPFlight is being developed for:
+ESPFlight is under active development and is being prepared as a public platform.
 
-* DIY drone builders
-* Electronics enthusiasts
-* Students and educators
-* Embedded-system developers
-* Android developers
-* Makers learning flight-control concepts
-* Developers experimenting with ESP microcontrollers
+Firmware, hardware-reference resources, documentation, application downloads, and ecosystem links will be published through the ESPFlight website and GitHub organization as each component is ready for public use.
 
-Experience with electronics, soldering, microcontrollers, and embedded programming is recommended.
+For the latest public information, visit:
+
+- **Website:** https://espflight.com
+- **GitHub:** https://github.com/ESPFlight
+- **Documentation:** https://espflight.com/docs/
+
+---
+
+## Safety
+
+ESPFlight controls real motors and flying hardware. Incorrect configuration, hardware faults, software defects, radio/network loss, battery problems, or improper testing can cause injury or property damage.
+
+Always test new hardware and firmware cautiously, keep propellers removed during bench testing where appropriate, verify failsafe behavior, and follow applicable local laws and safety requirements.
+
+Do not treat experimental functionality as production-ready unless it has been validated for your specific hardware and use case.
 
 ---
 
 ## Contributing
 
-ESPFlight is currently being prepared for public collaboration.
+As the public repositories are released, contributions may include:
 
-Contribution guidelines, coding standards, issue templates, and testing requirements will be published with the relevant repositories.
+- firmware improvements;
+- hardware-reference improvements;
+- documentation;
+- bug reports;
+- compatibility testing;
+- protocol feedback;
+- examples and educational material.
 
-Future contributions may include:
-
-* Firmware development
-* Android development
-* Bug reports
-* Documentation
-* Translation
-* Hardware testing
-* Safety reviews
-* Example projects
-
-> [!NOTE]
-> Flight-critical modifications should be clearly marked as experimental until their behavior has been validated through controlled testing.
+Repository-specific contribution instructions will live with each project.
 
 ---
-
-## Safety Notice
-
-> [!WARNING]
-> ESPFlight is experimental software. Quadcopters can cause injury, property damage, battery fires, or loss of control when assembled, configured, modified, or operated incorrectly.
-
-Before testing:
-
-* Remove all propellers during bench tests
-* Secure the aircraft before testing motors
-* Verify motor order and rotation direction
-* Use suitable batteries and power components
-* Test arming and failsafe behavior without propellers
-* Keep people and animals away from the test area
-* Conduct initial flights in a large open area
-* Follow applicable aviation and safety regulations
-
-Use ESPFlight entirely at your own risk.
-
----
-
-<div align="center">
 
 ## ESPFlight
 
-**An accessible path into DIY flight-control development.**
+**Build it. Brand it. Sell it.**  
+**Open platform. Independent products. Shared growth.**
 
-<br>
-
-<a href="https://espflight.com">
-  <img alt="Visit ESPFlight" src="https://img.shields.io/badge/Visit-espflight.com-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white">
-</a>
-
-<br><br>
-
-<sub>ESPFlight is under active development.</sub>
-
-</div>
+https://espflight.com
