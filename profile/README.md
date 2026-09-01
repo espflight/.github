@@ -4,11 +4,7 @@
 
 ESPFlight brings together open-source flight firmware, open hardware reference designs, documentation, and the ESPFlight Application to provide a practical foundation for creating and exploring ESP-based drone systems.
 
-ESPFlight is designed for enthusiasts, students, educators, Makers, developers, and engineers who want to learn how drone systems work, build their own drones, experiment with the technology, modify it, and develop their own projects.
-
 ## What ESPFlight Provides
-
-ESPFlight consists of:
 
 * Open-source flight firmware
 * Open hardware reference designs
@@ -16,48 +12,40 @@ ESPFlight consists of:
 * Documentation and build guides
 * A foundation for custom ESP-based drone development
 
+ESPFlight is designed for enthusiasts, students, educators, Makers, developers, and engineers who want to understand drone technology, build real systems, experiment with them, modify them, and create their own projects.
+
 ## Open by Design
 
 ESPFlight is intended to be a foundation rather than a closed ecosystem.
 
-You can study the platform, build the reference hardware, modify hardware designs, change or extend the firmware, experiment with different configurations, develop new features, and create your own projects around ESPFlight.
+You can study the platform, build the reference hardware, modify hardware designs, extend the firmware, experiment with different configurations, and create independent projects and products based on ESPFlight.
 
-Subject to the applicable licenses, independent Makers, developers, engineers, teams, and businesses may also create their own kits and products based on ESPFlight and distribute or sell them under their own independent brands.
+Independent products should use their own branding and must not be presented as official ESPFlight products.
 
-## Independent Products
+## Explore ESPFlight
 
-ESPFlight is not a commercial drone kit brand and there is no official ESPFlight hardware kit that users are required to purchase.
-
-Hardware published by ESPFlight is provided as a reference design.
-
-Independent products based on ESPFlight should use their own names and branding and must not be presented as official ESPFlight products unless explicitly authorized.
-
-## Project Philosophy
-
-**Learn it. Build it. Change it. Create your own.**
+* **ESPFlight Platform** — Core project information and platform identity
+* **Firmware** — Open-source flight firmware
+* **Hardware Reference** — Open hardware designs for building ESP-based drones
+* **Documentation** — Guides for building, configuring, and developing with ESPFlight
+* **ESPFlight Application** — Configuration and control application
 
 ## Licensing
 
-Different parts of ESPFlight use different licenses:
+ESPFlight uses different licenses for different parts of the platform:
 
-| Component                    | License                                      |
-| ---------------------------- | -------------------------------------------- |
-| ESPFlight Firmware           | MIT License                                  |
-| ESPFlight Hardware Reference | CERN-OHL-P-2.0                               |
-| ESPFlight Documentation      | CC BY 4.0                                    |
-| ESPFlight Application        | Proprietary — All Rights Reserved            |
-| ESPFlight Name & Logo        | All Rights Reserved — ESPFlight Brand Policy |
+* **Firmware:** MIT License
+* **Hardware Reference:** CERN-OHL-P-2.0
+* **Documentation:** CC BY 4.0
+* **ESPFlight Application:** Proprietary
+* **ESPFlight Brand:** All Rights Reserved
 
-See [LICENSING_OVERVIEW.md](LICENSING_OVERVIEW.md) for details.
+See the main ESPFlight repository for detailed licensing and brand information.
 
-ESPFlight branding is separate from the open-source, open-hardware, and documentation licenses. See [BRAND_POLICY.md](BRAND_POLICY.md).
+## Philosophy
 
-## Core Identity
-
-The official identity, purpose, audience, and philosophy of ESPFlight are documented in:
-
-[CORE_IDENTITY.md](CORE_IDENTITY.md)
+**Learn it. Build it. Change it. Create your own.**
 
 ## Website
 
-https://espflight.com
+**https://espflight.com**
