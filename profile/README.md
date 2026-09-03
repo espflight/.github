@@ -1,56 +1,66 @@
-ESPFlight
+<div align="center">
 
-Learn it. Build it. Change it. Create your own.
+# ESPFlight
 
-ESPFlight is an open platform for learning, building, experimenting with, and developing ESP-based drones.
+**Learn it. Build it. Change it. Create your own.**
 
-It brings together open-source flight firmware, open hardware reference designs, practical documentation, and the ESPFlight Application to provide an accessible foundation for creating and exploring ESP-based drone systems.
+Open platform for learning, building, experimenting with, and developing ESP-based drones.
 
-What ESPFlight provides
+[Website](https://espflight.com) · [Documentation](https://espflight.com/docs/) · [Firmware](https://github.com/espflight/firmware) · [Hardware Reference](https://github.com/espflight/hardware)
 
-Open-source flight firmware — a practical foundation for ESP-based flight-control projects.
+</div>
 
-Open hardware reference designs — hardware you can study, build, modify, and adapt.
+## What is ESPFlight?
 
-Documentation — practical guidance for learning, assembly, configuration, experimentation, and development.
+ESPFlight brings together open-source flight firmware, open hardware reference designs, practical documentation, and the ESPFlight Application to provide an accessible foundation for creating and exploring ESP-based drone systems.
 
-ESPFlight Application — the official companion application for compatible ESPFlight drones.
+It is built for enthusiasts, students, university students, teachers, instructors, educators, Makers, developers, and engineers who want to understand how drone systems work, build them, modify them, experiment with them, and create something of their own.
 
-Built to be explored
+## Platform
 
-ESPFlight is not a closed finished product. It is a foundation for enthusiasts, students, university students, teachers, instructors, Makers, developers, and engineers who want to understand how a drone works and then take it further.
+| Component | Purpose | License |
+| --- | --- | --- |
+| [ESPFlight Firmware](https://github.com/espflight/firmware) | Flight control, stabilization, safety, telemetry, configuration, and communication | MIT |
+| [Hardware Reference](https://github.com/espflight/hardware) | Open reference hardware for study, building, modification, and independent designs | CERN-OHL-P-2.0 |
+| [Documentation](https://espflight.com/docs/) | Build, setup, safety, experimentation, and development guidance | CC BY 4.0 |
+| ESPFlight Application | Official configuration and control application | Proprietary / All Rights Reserved |
 
-Learn from the platform. Build it. Change what you need. Create your own hardware, projects, kits, and independent ideas around it.
+## Built to be explored
 
-Open where it matters
+ESPFlight is a foundation rather than a closed finished product.
 
-Part
+Study the platform. Build the reference hardware. Change the firmware or hardware when your project needs something different. Experiment with new configurations and ideas. Then use what you learned to create your own projects, boards, kits, and independent products.
 
-License
+Subject to the applicable licenses, ESPFlight-based kits and products may be developed and sold under their creators' own independent brands.
 
-ESPFlight Firmware
+## Independent products
 
-MIT License
+ESPFlight is not a commercial drone-kit brand, and there is no official ESPFlight hardware kit that users are required to purchase.
 
-Hardware Reference
+Hardware published by ESPFlight is provided as a reference design. Independent products based on ESPFlight should use their own names and branding and must not be presented as official ESPFlight products unless explicitly authorized.
 
-CERN-OHL-P-2.0
+Accurate factual references such as **Based on ESPFlight**, **Compatible with ESPFlight**, and **Uses ESPFlight Firmware** may be used in accordance with the ESPFlight Brand Policy.
 
-Documentation
+## Licensing and brand
 
-CC BY 4.0
+ESPFlight uses separate licenses for different parts of the platform so that open technology, proprietary software, documentation, and the ESPFlight identity remain clearly separated.
 
-ESPFlight Application
+- Firmware — **MIT License**
+- Hardware Reference — **CERN-OHL-P-2.0**
+- Documentation — **CC BY 4.0**
+- ESPFlight Application — **Proprietary / All Rights Reserved**
+- ESPFlight name and logo — **All Rights Reserved**, subject to the ESPFlight Brand Policy
 
-Proprietary / All Rights Reserved
+Open-source and open-hardware licensing allows independent development and commercial use under the applicable licenses. The ESPFlight name, logo, and visual identity remain separate brand assets and do not automatically transfer with the technology.
 
-ESPFlight name and logo
+For the complete platform identity and licensing structure, see the [ESPFlight repository](https://github.com/espflight/espflight).
 
-All Rights Reserved — subject to the ESPFlight Brand Policy
+---
 
-Open-source and open-hardware licensing allows independent development and commercial use under the applicable licenses. The ESPFlight name and logo remain separate brand assets and do not automatically transfer with the technology.
+<div align="center">
 
-Start building
-Visit espflight.com for the platform overview, documentation, hardware reference, firmware information, application details, and licensing.
+**Learn it. Build it. Change it. Create your own.**
 
-ESPFlight — Learn it. Build it. Change it. Create your own.
+[espflight.com](https://espflight.com)
+
+</div>
