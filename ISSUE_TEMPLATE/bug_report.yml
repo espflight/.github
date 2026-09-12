@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a reproducible problem with ESPFlight
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not include passwords, Wi-Fi credentials, signing keys, or other secrets.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Firmware
+        - Hardware Reference
+        - Application
+        - Documentation
+        - Website / links
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Example: Firmware v1.0.0, Hardware v1.0, Application v1.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware / environment
+      description: Describe the controller, sensors/modules, power setup, phone/Android version, network, or other relevant environment details. Remove secrets.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence that reproduces the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or additional context
+      description: Remove credentials and private information before posting.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I stopped powered testing if the behavior could create an unsafe or uncontrolled condition.
+        - label: I removed passwords, keys, credentials, and other secrets from this report.
+          required: true
