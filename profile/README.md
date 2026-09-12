@@ -6,7 +6,7 @@
 
 Open platform for learning, building, experimenting with, and developing ESP-based drones.
 
-[Website](https://espflight.com) · [Documentation](https://espflight.com/docs/) · [Firmware](https://github.com/espflight/firmware) · [Hardware Reference](https://github.com/espflight/hardware)
+[Website](https://espflight.com) · [Build v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md) · [Documentation](https://espflight.com/docs/) · [Firmware](https://github.com/espflight/firmware) · [Hardware Reference](https://github.com/espflight/hardware) · [Application](https://github.com/espflight/application)
 
 </div>
 
@@ -16,6 +16,19 @@ ESPFlight brings together open-source flight firmware, open hardware reference d
 
 It is built for enthusiasts, students, university students, teachers, instructors, educators, Makers, developers, and engineers who want to understand how drone systems work, build them, modify them, experiment with them, and create something of their own.
 
+## Start with ESPFlight v1.0
+
+The current validated platform baseline is:
+
+- **ESPFlight Firmware v1.0.0**
+- **ESPFlight Hardware Reference v1.0**
+- **ESPFlight Application v1.0.0**
+- **ESPFlight Protocol 2**
+
+For the shortest official path from hardware to first controlled flight, see:
+
+**[Build ESPFlight v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md)**
+
 ## Platform
 
 | Component | Purpose | License |
@@ -23,7 +36,7 @@ It is built for enthusiasts, students, university students, teachers, instructor
 | [ESPFlight Firmware](https://github.com/espflight/firmware) | Flight control, stabilization, safety, telemetry, configuration, and communication | MIT |
 | [Hardware Reference](https://github.com/espflight/hardware) | Open reference hardware for study, building, modification, and independent designs | CERN-OHL-P-2.0 |
 | [Documentation](https://espflight.com/docs/) | Build, setup, safety, experimentation, and development guidance | CC BY 4.0 |
-| ESPFlight Application | Official configuration and control application | Proprietary / All Rights Reserved |
+| [ESPFlight Application](https://github.com/espflight/application) | Official configuration and control application | Proprietary / All Rights Reserved |
 
 ## Built to be explored
 
