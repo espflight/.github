@@ -1,0 +1,51 @@
+name: Feature request
+description: Suggest an improvement for ESPFlight
+title: "[Feature]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem or use case first. ESPFlight is an open learning and development platform rather than a closed finished product.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Firmware
+        - Hardware Reference
+        - Application
+        - Documentation
+        - Website / ecosystem
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to do, learn, build, or improve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed feature
+      description: Describe the change and how it would help.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. Describe workarounds or other approaches you considered.
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility / safety considerations
+      description: Mention any impact on Protocol 2, existing hardware, pin assignments, flight behavior, power, or safety if relevant.
