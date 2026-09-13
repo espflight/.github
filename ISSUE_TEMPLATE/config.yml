@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: ESPFlight Documentation
+    url: https://espflight.com/docs/
+    about: Start here for setup, build, safety, and troubleshooting guidance.
+  - name: Build ESPFlight v1.0
+    url: https://github.com/espflight/docs/blob/main/BUILD_V1.0.md
+    about: Follow the validated v1.0 path from hardware to first controlled flight.
+  - name: ESPFlight Security Policy
+    url: https://github.com/espflight/.github/blob/main/SECURITY.md
+    about: Read this before reporting a sensitive security issue.
