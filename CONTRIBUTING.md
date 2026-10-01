@@ -65,6 +65,14 @@ Do not mix unrelated changes in one pull request.
 
 Changes that alter communication protocols, pin assignments, control behavior, safety logic, power assumptions, or hardware interfaces should clearly document compatibility impact.
 
+## Release-critical changes
+
+Changes intended for an official release should follow the organization release process:
+
+[RELEASE_PROCESS.md](RELEASE_PROCESS.md)
+
+Future official release commits and tags should be cryptographically signed and shown by GitHub as Verified. Never commit private signing keys, Android keystores, tokens, passwords, or recovery material.
+
 ## Licensing and branding
 
 Contributions to a repository are subject to that repository's applicable license and contribution context.
