@@ -1,12 +1,28 @@
 # ESPFlight GitHub Administration Hardening
 
-This file records repository-administration settings that cannot be enforced by repository content alone.
+This file records repository-administration controls that cannot be enforced by repository content alone and documents the current hardening baseline.
 
-It is intended to keep the target configuration explicit and auditable.
+## Current status — 2026-10-02
 
-## Default-branch protection
+The maintainer confirmed the following GitHub administration changes were completed manually on 2026-10-02:
 
-Apply a repository ruleset or branch-protection rule to `main` for:
+- active rulesets on the default `main` branch for all six ESPFlight repositories;
+- branch deletion blocked;
+- force pushes blocked;
+- Firmware configured with its required CI status check;
+- GitHub Private Vulnerability Reporting enabled for Firmware, Application, and Hardware Reference;
+- the `esp32` topic removed from `espflight/firmware`;
+- SSH commit and annotated-tag signing configured for the release maintainer;
+- a test signed commit verified successfully by GitHub;
+- a test signed annotated tag verified successfully by GitHub;
+- the temporary signing-test branch and tag removed after verification;
+- the original editable EasyEDA source snapshot for Hardware Reference v1.0 added under `hardware/design/`.
+
+Administration settings above were confirmed by the maintainer because the repository connector does not expose administration-write access for all of these controls.
+
+## Default-branch protection baseline
+
+The protected repositories are:
 
 - `espflight/firmware`
 - `espflight/hardware`
@@ -15,24 +31,24 @@ Apply a repository ruleset or branch-protection rule to `main` for:
 - `espflight/espflight`
 - `espflight/.github`
 
-Minimum baseline:
+Current minimum baseline:
 
 - block force pushes;
 - block branch deletion;
-- require pull requests for release-critical and safety-critical changes;
-- require applicable status checks before merge;
-- for Firmware, require the `Firmware CI / Compile ESPFlight Firmware v1.0.0 baseline` check;
-- keep administrator bypass limited and intentional.
+- require the applicable Firmware CI status check on `espflight/firmware`;
+- keep bypass privileges limited and intentional.
+
+Pull-request enforcement for all changes is not currently part of the v1.0 baseline. It may be enabled later if ESPFlight adopts a stricter multi-contributor review workflow.
 
 ## Private vulnerability reporting
 
-Enable GitHub Private Vulnerability Reporting for actively maintained repositories where GitHub supports it, with highest priority on:
+GitHub Private Vulnerability Reporting is enabled, per maintainer confirmation, for:
 
 - Firmware
 - Application
 - Hardware Reference
 
-After enabling it, verify that the repository Security page exposes **Report a vulnerability** and update `SECURITY.md` only if the user-facing wording needs to change.
+`SECURITY.md` remains the public security-policy entry point.
 
 Do not request exploit details, credentials, signing keys, or flight-control attack steps in a public issue.
 
@@ -40,28 +56,40 @@ Do not request exploit details, credentials, signing keys, or flight-control att
 
 The public v1.0 firmware baseline targets ESP8266 / LOLIN(WEMOS) D1 R2 & mini.
 
-Until an ESP32 target is officially implemented and validated, remove the `esp32` repository topic from `espflight/firmware`.
+The maintainer confirmed that the misleading `esp32` repository topic was removed on 2026-10-02.
 
-The `esp8266` topic should remain.
+The `esp8266` topic should remain until the supported target matrix changes.
 
 ## Signed release identity
 
-Before the next official release:
+SSH signing is configured for the release maintainer.
 
-1. Configure Git commit/tag signing for the release maintainer.
-2. Verify a test signed commit appears as **Verified** on GitHub.
-3. Create future official release tags as annotated signed tags.
-4. Confirm the release commit and tag display as **Verified** before publishing assets.
-5. Never store private signing keys or Android keystores in GitHub repositories.
+GitHub verification was successfully tested for:
+
+- a signed commit;
+- an annotated signed tag.
+
+Future official releases should:
+
+1. use a signed release commit;
+2. create an annotated signed release tag;
+3. confirm both display as **Verified** on GitHub before publishing release assets;
+4. never store private signing keys, passphrases, Android keystores, or other release secrets in GitHub repositories.
 
 See `RELEASE_PROCESS.md` for the project-wide release sequence.
 
 ## Hardware editable-source snapshot
 
-Before the next Hardware Reference baseline, export the native/editable EasyEDA project for that exact revision and commit it under `hardware/design/`.
+The original editable EasyEDA source snapshot for Hardware Reference v1.0 is now preserved on the current `main` branch under:
 
-The original v1.0 source package does not contain such an export, so no reconstructed or guessed file should be substituted for it.
+`hardware/design/ESPFlight_Hardware_Reference_v1.0_EasyEDA_Source.zip`
 
-## Reason this file exists
+The published `v1.0` tag remains immutable and was not rewritten.
 
-Branch rulesets, repository topics, private vulnerability reporting, and signing-key configuration are GitHub administration/account controls. They are not activated merely by committing YAML or Markdown files and must be changed through GitHub administration surfaces or an integration with explicit administration-write support.
+Future Hardware Reference releases must include the corresponding editable source snapshot as part of the release baseline before publication.
+
+## Administration note
+
+Branch rulesets, repository topics, private vulnerability reporting, and signing-key configuration are GitHub administration/account controls. They are not activated merely by committing YAML or Markdown files.
+
+When these settings change in the future, update this file so the documented governance baseline matches the actual GitHub configuration.
