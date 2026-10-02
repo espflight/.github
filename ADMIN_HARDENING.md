@@ -4,21 +4,25 @@ This file records repository-administration controls that cannot be enforced by 
 
 ## Current status — 2026-10-02
 
-The maintainer confirmed the following GitHub administration changes were completed manually on 2026-10-02:
+The following hardening state is now established:
 
-- active rulesets on the default `main` branch for all six ESPFlight repositories;
+- active default-branch rulesets on all six ESPFlight repositories;
 - branch deletion blocked;
 - force pushes blocked;
-- Firmware configured with its required CI status check;
-- GitHub Private Vulnerability Reporting enabled for Firmware, Application, and Hardware Reference;
-- the `esp32` topic removed from `espflight/firmware`;
+- Firmware configured with its required compile status check;
+- release-tag rulesets active on Firmware, Hardware Reference, and Application for tags matching `v*`;
+- release-tag deletion, update, and non-fast-forward changes blocked with no bypass actors;
+- release immutability enabled for future Firmware, Hardware Reference, and Application GitHub Releases, per maintainer confirmation;
+- GitHub Private Vulnerability Reporting enabled for Firmware, Application, and Hardware Reference, per maintainer confirmation;
+- the misleading `esp32` topic removed from `espflight/firmware`;
 - SSH commit and annotated-tag signing configured for the release maintainer;
-- a test signed commit verified successfully by GitHub;
-- a test signed annotated tag verified successfully by GitHub;
-- the temporary signing-test branch and tag removed after verification;
-- the original editable EasyEDA source snapshot for Hardware Reference v1.0 added under `hardware/design/`.
+- a test SSH-signed commit verified successfully by GitHub;
+- a test SSH-signed annotated tag verified successfully by GitHub;
+- temporary signing-test refs removed after verification;
+- the editable EasyEDA source snapshot preserved under `hardware/design/`;
+- the EasyEDA `R13` PCB component metadata corrected on `main` without changing the authoritative v1.0 Gerber, BOM, or Pick-and-Place fabrication baseline.
 
-Administration settings above were confirmed by the maintainer because the repository connector does not expose administration-write access for all of these controls.
+Ruleset state above was read back through the GitHub API where the connector exposes it. Administration settings that are not exposed through the connector remain recorded from maintainer confirmation.
 
 ## Default-branch protection baseline
 
@@ -31,14 +35,45 @@ The protected repositories are:
 - `espflight/espflight`
 - `espflight/.github`
 
-Current minimum baseline:
+Current enforced minimum:
 
 - block force pushes;
 - block branch deletion;
 - require the applicable Firmware CI status check on `espflight/firmware`;
-- keep bypass privileges limited and intentional.
+- keep bypass privileges absent or intentionally limited.
 
 Pull-request enforcement for all changes is not currently part of the v1.0 baseline. It may be enabled later if ESPFlight adopts a stricter multi-contributor review workflow.
+
+## Release tag protection
+
+Active tag rulesets exist on:
+
+- `espflight/firmware`
+- `espflight/hardware`
+- `espflight/application`
+
+They target:
+
+`refs/tags/v*`
+
+The enforced rules are:
+
+- deletion blocked;
+- update blocked;
+- non-fast-forward changes blocked;
+- no bypass actors.
+
+Creation is intentionally allowed so new signed release tags can be created. Once a matching version tag exists, it is protected from later mutation.
+
+## Release immutability
+
+The maintainer confirmed that release immutability is enabled for future releases in:
+
+- Firmware
+- Hardware Reference
+- Application
+
+This setting applies to future release publication behavior. Historical v1.0 / v1.0.0 releases are not rewritten merely to retrofit newer release-protection features.
 
 ## Private vulnerability reporting
 
@@ -80,9 +115,11 @@ See `RELEASE_PROCESS.md` for the project-wide release sequence.
 
 ## Hardware editable-source snapshot
 
-The original editable EasyEDA source snapshot for Hardware Reference v1.0 is now preserved on the current `main` branch under:
+The current `main` branch preserves the editable EasyEDA source at:
 
 `hardware/design/ESPFlight_Hardware_Reference_v1.0_EasyEDA_Source.zip`
+
+On 2026-10-02 the PCB metadata for `R13` inside that editable snapshot was corrected to match the authoritative v1.0 BOM. The PCB geometry, routing, schematic, and official v1.0 fabrication files were not replaced.
 
 The published `v1.0` tag remains immutable and was not rewritten.
 
@@ -90,6 +127,6 @@ Future Hardware Reference releases must include the corresponding editable sourc
 
 ## Administration note
 
-Branch rulesets, repository topics, private vulnerability reporting, and signing-key configuration are GitHub administration/account controls. They are not activated merely by committing YAML or Markdown files.
+Branch rulesets, tag rulesets, repository topics, private vulnerability reporting, release immutability, and signing-key configuration are GitHub administration/account controls. They are not activated merely by committing YAML or Markdown files.
 
 When these settings change in the future, update this file so the documented governance baseline matches the actual GitHub configuration.
