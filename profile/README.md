@@ -2,7 +2,7 @@
 
 # ESPFlight
 
-**Learn it. Build it. Change it. Create your own.**
+**Learn. Build. Fly.**
 
 Open platform for learning, building, experimenting with, and developing ESP-based drones.
 
@@ -72,7 +72,7 @@ For the complete platform identity and licensing structure, see the [ESPFlight r
 
 <div align="center">
 
-**Learn it. Build it. Change it. Create your own.**
+**Learn. Build. Fly.**
 
 [espflight.com](https://espflight.com)
 
