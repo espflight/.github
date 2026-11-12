@@ -61,4 +61,4 @@ If a problem could produce unexpected motor output, uncontrolled flight, unsafe 
 
 ---
 
-**Learn it. Build it. Change it. Create your own.**
+**Learn. Build. Fly.**
