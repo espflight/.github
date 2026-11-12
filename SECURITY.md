@@ -60,4 +60,4 @@ Official website: https://espflight.com
 
 ---
 
-**Learn it. Build it. Change it. Create your own.**
+**Learn. Build. Fly.**
