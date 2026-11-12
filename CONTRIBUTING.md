@@ -91,4 +91,4 @@ Bench-test without propellers where appropriate and follow applicable local laws
 
 ---
 
-**Learn it. Build it. Change it. Create your own.**
+**Learn. Build. Fly.**
